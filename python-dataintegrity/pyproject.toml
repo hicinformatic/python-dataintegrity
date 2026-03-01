@@ -47,7 +47,7 @@ Documentation = "https://github.com/hicinformatic/python-dataintegrity/tree/main
 Issues = "https://github.com/hicinformatic/python-dataintegrity/issues"
 
 [tool.setuptools]
-license-files = ["LICENSE"]
+license-files = ["../LICENSE"]
 package-data = {dataintegrity = [".commands.json"]}
 
 [tool.setuptools.packages.find]
