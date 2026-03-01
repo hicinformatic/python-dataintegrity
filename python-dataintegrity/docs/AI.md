@@ -28,7 +28,7 @@ These rules must always be followed.
 - Do not invent new services, commands, abstractions, patterns, or architectures
 - Do not refactor, redesign, or optimize unless explicitly requested
 - Do not manipulate `sys.path`
-- Do not use filesystem-based imports to access `providerkit` or `qualitybase`
+- Do not use filesystem-based imports to access `providerkit` or `clicommands`
 - Do not hardcode secrets, credentials, tokens, or API keys
 - Do not execute tooling commands outside the approved entry points
 - **Comments**: Only add comments to resolve ambiguity or uncertainty. Do not comment obvious code.
@@ -198,14 +198,14 @@ python-geoaddress/
 
 ---
 
-## Qualitybase Integration (ABSOLUTE)
+## Clicommands Integration (ABSOLUTE)
 
-- `qualitybase` is an installed package (used via service.py)
-- Always use standard Python imports from `qualitybase.services` when needed
-- No path manipulation: Never manipulate `sys.path` or use file paths to import qualitybase modules
-- Direct imports only: Use `from qualitybase.services import ...` or `import qualitybase.services ...`
+- `clicommands` is an installed package (used for CLI commands)
+- Always use standard Python imports from `clicommands.commands` and `clicommands.utils` when needed
+- No path manipulation: Never manipulate `sys.path` or use file paths to import clicommands modules
+- Direct imports only: Use `from clicommands.commands import ...` or `from clicommands.utils import ...`
 - Standard library imports: Use `importlib.import_module()` from the standard library if needed for dynamic imports
-- Works everywhere: Since qualitybase is installed in the virtual environment, imports work consistently across all projects
+- Works everywhere: Since clicommands is installed in the virtual environment, imports work consistently across all projects
 
 ---
 

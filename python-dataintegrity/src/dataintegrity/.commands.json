@@ -1,5 +1,5 @@
 {
-    "packages": ["qualitybase", "providerkit"],
+    "packages": ["clicommands", "providerkit"],
     "directories": ["commands"],
     "commands": []
 }
