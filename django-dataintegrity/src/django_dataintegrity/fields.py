@@ -1,4 +1,4 @@
-"""Champs pour djdataintegrity."""
+"""Champs pour django_dataintegrity."""
 
 from __future__ import annotations
 

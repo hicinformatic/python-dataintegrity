@@ -28,7 +28,7 @@ class DataIntegrityProviderModel(VirtualModel):
 
     class Meta:
         managed = False
-        app_label = "djdataintegrity"
+        app_label = "django_dataintegrity"
         verbose_name = _("Data Integrity Provider")
         verbose_name_plural = _("Data Integrity Providers")
         ordering = ["-priority", "name"]

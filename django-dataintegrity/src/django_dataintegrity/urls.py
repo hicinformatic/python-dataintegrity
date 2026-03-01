@@ -5,7 +5,7 @@ from django.urls import path
 from .views.provider import list_providers, detail_provider
 from .views.index import index
 
-app_name = "djdataintegrity"
+app_name = "django_dataintegrity"
 
 urlpatterns = [
     path("", index, name="index"),

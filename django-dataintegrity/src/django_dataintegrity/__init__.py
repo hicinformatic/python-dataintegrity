@@ -6,7 +6,7 @@ from django.db import models
 
 __version__ = "0.1.0"
 
-default_app_config = "djdataintegrity.apps.DjDataIntegrityConfig"
+default_app_config = "django_dataintegrity.apps.DjangoDataintegrityConfig"
 
 fields_associations = {
     'int': models.IntegerField,

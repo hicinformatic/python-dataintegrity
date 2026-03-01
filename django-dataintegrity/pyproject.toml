@@ -57,7 +57,7 @@ license-files = ["../LICENSE"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
-include = ["djdataintegrity*"]
+include = ["django_dataintegrity*"]
 exclude = ["tests*"]
 
 [tool.pytest.ini_options]

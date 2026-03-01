@@ -6,7 +6,10 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
     initial = True
 
-    dependencies = []
+    dependencies = [
+        ("contenttypes", "0002_remove_content_type_name"),
+        ("django_dataintegrity", "0002_rename_djdataintegrity_to_django_dataintegrity"),
+    ]
 
     operations = [
         migrations.CreateModel(

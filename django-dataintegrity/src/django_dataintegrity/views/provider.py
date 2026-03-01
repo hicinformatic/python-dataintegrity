@@ -48,7 +48,7 @@ def list_providers(request: HttpRequest) -> HttpResponse:
         return JsonResponse({"providers": result}, json_dumps_params={"ensure_ascii": False})
 
     # HTML format (default)
-    return render(request, "djdataintegrity/provider_list.html", {"providers": result})
+    return render(request, "django_dataintegrity/provider_list.html", {"providers": result})
 
 
 @dataintegrityview_enabled_and_login("DATAINTEGRITY_PROVIDERVIEW")
@@ -71,4 +71,4 @@ def detail_provider(request: HttpRequest, provider_name: str) -> HttpResponse:
         from django.http import Http404
 
         raise Http404("Provider not found")
-    return render(request, "djdataintegrity/provider_detail.html", {"provider": provider})
+    return render(request, "django_dataintegrity/provider_detail.html", {"provider": provider})

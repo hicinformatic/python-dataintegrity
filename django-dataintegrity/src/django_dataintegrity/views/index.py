@@ -14,6 +14,6 @@ def index(request: HttpRequest) -> HttpResponse:
     """Home page for dataintegrity with links to providers."""
 
     context = {
-        "providers_url": reverse("djdataintegrity:list_providers"),
+        "providers_url": reverse("django_dataintegrity:list_providers"),
     }
-    return render(request, "djdataintegrity/index.html", context)
+    return render(request, "django_dataintegrity/index.html", context)

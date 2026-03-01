@@ -1,9 +1,9 @@
-"""Tests pour djdataintegrity."""
+"""Tests pour django_dataintegrity."""
 
 import pytest
 from django.test import TestCase
 
-from djdataintegrity.models import SignStamp
+from django_dataintegrity.models import SignStamp
 
 
 @pytest.mark.django_db

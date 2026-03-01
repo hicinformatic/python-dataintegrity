@@ -1,4 +1,4 @@
-"""Managers for djdataintegrity."""
+"""Managers for django_dataintegrity."""
 
 from .provider import ProviderManager
 

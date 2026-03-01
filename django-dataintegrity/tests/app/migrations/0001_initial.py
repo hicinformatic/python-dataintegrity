@@ -8,7 +8,7 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ("djdataintegrity", "0001_initial"),
+        ("django_dataintegrity", "0001_initial"),
     ]
 
     operations = [
@@ -24,7 +24,7 @@ class Migration(migrations.Migration):
                     null=True,
                     on_delete=django.db.models.deletion.SET_NULL,
                     related_name="registry",
-                    to="djdataintegrity.signstamp",
+                    to="django_dataintegrity.signstamp",
                     verbose_name="Preuve d'intégrité",
                 )),
             ],

@@ -1,4 +1,4 @@
-"""Champs Django REST Framework pour djdataintegrity."""
+"""Champs Django REST Framework pour django_dataintegrity."""
 
 from rest_framework import serializers
 

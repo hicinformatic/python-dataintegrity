@@ -76,7 +76,7 @@ INSTALLED_APPS += [
     "django_boosted",
     "virtualqueryset",
     "djproviderkit",
-    "djdataintegrity",
+    "django_dataintegrity",
     "tests.app",
 ]
 

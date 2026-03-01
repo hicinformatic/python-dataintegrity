@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% trans "Provider" %}: {{ provider.display_name }} - {% trans "Data Integrity" %}</title>
-    <link rel="stylesheet" href="{% static 'djdataintegrity/css/dataintegrity_provider.css' %}">
+    <link rel="stylesheet" href="{% static 'django_dataintegrity/css/dataintegrity_provider.css' %}">
 </head>
 <body>
     <div style="margin-bottom: 20px;">
-        <a href="{% url 'djdataintegrity:list_providers' %}" style="color: #0066cc; text-decoration: none;">← {% trans "Back to providers list" %}</a>
+        <a href="{% url 'django_dataintegrity:list_providers' %}" style="color: #0066cc; text-decoration: none;">← {% trans "Back to providers list" %}</a>
     </div>
 
     <div class="provider-card">

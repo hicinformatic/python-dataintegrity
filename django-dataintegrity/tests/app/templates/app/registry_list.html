@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>{% trans "Registres" %}</h1>
-    <p><a href="{% url 'djdataintegrity:index' %}">← Data Integrity</a> | <a href="/admin/">Admin</a></p>
+    <p><a href="{% url 'django_dataintegrity:index' %}">← Data Integrity</a> | <a href="/admin/">Admin</a></p>
     <ul>
         {% for reg in registries %}
         <li>

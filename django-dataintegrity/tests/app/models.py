@@ -3,7 +3,7 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
-from djdataintegrity.fields import HashField
+from django_dataintegrity.fields import HashField
 
 
 class Registry(models.Model):
@@ -19,7 +19,7 @@ class Registry(models.Model):
         help_text=_("SHA-256 du registre"),
     )
     signstamp = models.OneToOneField(
-        "djdataintegrity.SignStamp",
+        "django_dataintegrity.SignStamp",
         on_delete=models.SET_NULL,
         null=True,
         blank=True,
