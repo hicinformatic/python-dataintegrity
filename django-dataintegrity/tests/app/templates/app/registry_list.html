@@ -1,0 +1,26 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{% trans "Registres" %} - Data Integrity</title>
+</head>
+<body>
+    <h1>{% trans "Registres" %}</h1>
+    <p><a href="{% url 'djdataintegrity:index' %}">← Data Integrity</a> | <a href="/admin/">Admin</a></p>
+    <ul>
+        {% for reg in registries %}
+        <li>
+            {{ reg.name }} — {{ reg.content_hash|truncatechars:16 }}…
+            {% if reg.signstamp %}
+                ✓ sign {% if reg.signstamp.has_sign %}✓{% endif %} stamp {% if reg.signstamp.has_stamp %}✓{% endif %}
+            {% else %}
+                (sans preuve)
+            {% endif %}
+        </li>
+        {% empty %}
+        <li>{% trans "Aucun registre." %}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

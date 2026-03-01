@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-dataintegrity"
+version = "0.1.0"
+description = "Intégration Django pour la preuve d'intégrité : hash (blockchain) et signature."
+readme = "README.md"
+authors = [{ name = "Hicinformatic", email = "hicinformatic@gmail.com" }]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+keywords = [
+  "django",
+  "integrity",
+  "proof",
+  "hash",
+  "blockchain",
+  "signature",
+  "verification",
+  "django-fields",
+  "python",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Framework :: Django",
+  "Framework :: Django :: 3.2",
+  "Framework :: Django :: 4.0",
+  "Framework :: Django :: 4.1",
+  "Framework :: Django :: 4.2",
+  "Framework :: Django :: 5.0",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Security",
+]
+dependencies = [
+  "Django>=3.2",
+  "dataintegrity",
+  "django-namedid>=0.1.0",
+  "django-boosted>=0.1.0",
+  "django-providerkit>=0.1.0",
+  "django-virtualqueryset>=0.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/hicinformatic/python-dataintegrity"
+Repository = "https://github.com/hicinformatic/python-dataintegrity"
+Documentation = "https://github.com/hicinformatic/python-dataintegrity/tree/main/django-dataintegrity#readme"
+Issues = "https://github.com/hicinformatic/python-dataintegrity/issues"
+
+[tool.setuptools]
+license-files = ["LICENSE"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["djdataintegrity*"]
+exclude = ["tests*"]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "tests.settings"
+testpaths = ["tests"]
+pythonpath = ["src"]

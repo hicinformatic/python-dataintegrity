@@ -1,0 +1,20 @@
+{% load i18n static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Data Integrity" %} - Accueil</title>
+    <link rel="stylesheet" href="{% static 'djdataintegrity/css/dataintegrity_index.css' %}">
+</head>
+<body>
+    <div class="home-container">
+        <h1 class="home-title">{% trans "Data Integrity" %}</h1>
+        <div class="nav-links">
+            <a href="{{ providers_url }}" class="nav-link">
+                {% trans "Providers" %}
+            </a>
+        </div>
+    </div>
+</body>
+</html>
