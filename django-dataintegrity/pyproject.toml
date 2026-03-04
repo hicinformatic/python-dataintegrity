@@ -60,6 +60,9 @@ where = ["src"]
 include = ["django_dataintegrity*"]
 exclude = ["tests*"]
 
+[tool.setuptools.package-data]
+django_dataintegrity = ["templates/**/*"]
+
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "tests.settings"
 testpaths = ["tests"]

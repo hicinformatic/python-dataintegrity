@@ -35,5 +35,8 @@ htmlcov/
 # Environment
 .env
 
+# Distribution
+dist/
+
 # Lock files
 poetry.lock
